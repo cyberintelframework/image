@@ -2,4 +2,12 @@
 .build
 cache
 chroot
-
+.lock
+binary/
+chroot.files
+chroot.packages.install
+chroot.packages.live
+chroot.tmp/
+live-image-amd64.files
+live-image-amd64.packages
+live-image-amd64.contents
