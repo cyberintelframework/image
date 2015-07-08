@@ -1,0 +1,6 @@
+---
+- hosts: all
+  tasks:
+    - name: install live build
+      apt: name=live-build update_cache=yes
+      sudo: yes
