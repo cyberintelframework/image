@@ -51,7 +51,7 @@ LB_DEBIAN_INSTALLER="false"
 
 # $LB_DEBIAN_INSTALLER_DISTRIBUTION: set debian-installer suite
 # (Default: empty)
-LB_DEBIAN_INSTALLER_DISTRIBUTION="precise"
+LB_DEBIAN_INSTALLER_DISTRIBUTION="jessie"
 
 # $LB_DEBIAN_INSTALLER_PRESEEDFILE: set debian-installer preseed filename/url
 # (Default: )
@@ -66,16 +66,16 @@ LB_DEBIAN_INSTALLER_GUI="false"
 LB_GRUB_SPLASH=""
 
 # $LB_HDD_LABEL: set hdd label
-# (Default: UBUNTU)
-LB_HDD_LABEL="UBUNTU"
+# (Default: DEBIAN)
+LB_HDD_LABEL="DEBIAN"
 
 # $LB_HDD_SIZE: set hdd filesystem size
 # (Default: 10000)
 LB_HDD_SIZE="10000"
 
 # $LB_ISO_APPLICATION: set iso author
-# (Default: Ubuntu Live)
-LB_ISO_APPLICATION="Ubuntu Live"
+# (Default: debian Live)
+LB_ISO_APPLICATION="debian Live"
 
 # $LB_ISO_PREPARER: set iso preparer
 # (Default: live-build $VERSION; http://packages.qa.debian.org/live-build)
@@ -86,8 +86,8 @@ LB_ISO_PREPARER="live-build $VERSION; http://packages.qa.debian.org/live-build"
 LB_ISO_PUBLISHER="Debian Live project; http://live.debian.net/; debian-live@lists.debian.org"
 
 # $LB_ISO_VOLUME: set iso volume (max 32 chars)
-# (Default: Ubuntu precise $(date +%Y%m%d-%H:%M))
-LB_ISO_VOLUME="Ubuntu precise $(date +%Y%m%d-%H:%M)"
+# (Default: debian jessie $(date +%Y%m%d-%H:%M))
+LB_ISO_VOLUME="Debian jessie $(date +%Y%m%d-%H:%M)"
 
 # $LB_JFFS2_ERASEBLOCK: set jffs2 eraseblock size
 # (Default: unset)
@@ -110,8 +110,8 @@ LB_NET_ROOT_FILESYSTEM="nfs"
 LB_NET_ROOT_MOUNTOPTIONS=""
 
 # $LB_NET_ROOT_PATH: set netboot server directory
-# (Default: /srv/ubuntu-live)
-LB_NET_ROOT_PATH="/srv/ubuntu-live"
+# (Default: /srv/debian-live)
+LB_NET_ROOT_PATH="/srv/debian-live"
 
 # $LB_NET_ROOT_SERVER: set netboot server address
 # (Default: 192.168.1.1)
@@ -154,5 +154,4 @@ LB_SWAP_FILE_PATH=""
 LB_SWAP_FILE_SIZE="512"
 
 # $LB_SYSLINUX_THEME: set syslinux theme package
-# (Default: ubuntu-oneiric)
-LB_SYSLINUX_THEME="ubuntu-oneiric"
+LB_SYSLINUX_THEME="debian-jessie"
