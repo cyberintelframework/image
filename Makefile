@@ -5,3 +5,6 @@ config:
 
 build:
 	sudo lb build
+
+clean:
+	sudo lb clean
