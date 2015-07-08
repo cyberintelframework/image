@@ -4,10 +4,6 @@
 # (Default: fat16)
 LB_BINARY_FILESYSTEM="fat16"
 
-# $LB_BINARY_IMAGES: set image type
-# (Default: hdd)
-LB_BINARY_IMAGES="hdd"
-
 # $LB_APT_INDICES: set apt/aptitude generic indices
 # (Default: true)
 LB_APT_INDICES="true"
@@ -20,9 +16,9 @@ LB_BOOTAPPEND_LIVE=""
 # (Default: empty)
 LB_BOOTAPPEND_INSTALL=""
 
-# $LB_BOOTAPPEND_FAILSAFE: set boot parameters
+# $LB_BOOTAPPEND_LIVE_FAILSAFE: set boot parameters
 # (Default: empty)
-LB_BOOTAPPEND_FAILSAFE="memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal"
+LB_BOOTAPPEND_LIVE_FAILSAFE=""
 
 # $LB_BOOTLOADER: set bootloader
 # (Default: syslinux)
@@ -78,16 +74,16 @@ LB_HDD_SIZE="10000"
 LB_ISO_APPLICATION="debian Live"
 
 # $LB_ISO_PREPARER: set iso preparer
-# (Default: live-build $VERSION; http://packages.qa.debian.org/live-build)
-LB_ISO_PREPARER="live-build $VERSION; http://packages.qa.debian.org/live-build"
+# (Default: live-build 4.0.3-1; http://packages.qa.debian.org/live-build)
+LB_ISO_PREPARER="live-build 4.0.3-1; http://packages.qa.debian.org/live-build"
 
 # $LB_ISO_PUBLISHER: set iso publisher
 # (Default: Debian Live project; http://live.debian.net/; debian-live@lists.debian.org)
 LB_ISO_PUBLISHER="Debian Live project; http://live.debian.net/; debian-live@lists.debian.org"
 
 # $LB_ISO_VOLUME: set iso volume (max 32 chars)
-# (Default: debian jessie $(date +%Y%m%d-%H:%M))
-LB_ISO_VOLUME="Debian jessie $(date +%Y%m%d-%H:%M)"
+# (Default: Debian jessie 20150708-15:18)
+LB_ISO_VOLUME="Debian jessie 20150708-15:18"
 
 # $LB_JFFS2_ERASEBLOCK: set jffs2 eraseblock size
 # (Default: unset)
@@ -97,9 +93,13 @@ LB_JFFS2_ERASEBLOCK=""
 # (Default: memtest86+)
 LB_MEMTEST="memtest86+"
 
+# $LB_LOADLIN: set loadlin
+# (Default: false)
+LB_LOADLIN="false"
+
 # $LB_WIN32_LOADER: set win32-loader
-# (Default: )
-LB_WIN32_LOADER=""
+# (Default: false)
+LB_WIN32_LOADER="false"
 
 # $LB_NET_ROOT_FILESYSTEM: set netboot filesystem
 # (Default: nfs)
@@ -152,6 +152,3 @@ LB_SWAP_FILE_PATH=""
 # $LB_SWAP_FILE_SIZE: set swap file size
 # (Default: 512)
 LB_SWAP_FILE_SIZE="512"
-
-# $LB_SYSLINUX_THEME: set syslinux theme package
-LB_SYSLINUX_THEME="debian-jessie"
