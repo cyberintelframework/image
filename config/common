@@ -57,8 +57,8 @@ LB_DEBCONF_FRONTEND="noninteractive"
 LB_DEBCONF_PRIORITY="critical"
 
 # $LB_INITRAMFS: set initramfs hook
-# (Default: auto)
-LB_INITRAMFS="auto"
+# (Default: live-boot)
+LB_INITRAMFS="live-boot"
 
 # $LB_INITRAMFS_COMPRESSION: set initramfs compression
 # (Default: gzip)
@@ -123,5 +123,5 @@ APT_OPTIONS="--yes"
 APTITUDE_OPTIONS="--assume-yes"
 DEBOOTSTRAP_OPTIONS=""
 CDEBOOTSTRAP_OPTIONS=""
-GZIP_OPTIONS="-6  --rsyncable"
+GZIP_OPTIONS="-6 --rsyncable"
 ISOHYBRID_OPTIONS=""
