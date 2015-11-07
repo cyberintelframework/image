@@ -5,6 +5,6 @@ Distribution: jessie
 Mirror-Bootstrap: http://ftp.debian.org/debian/
 
 [FIXME]
-Configuration-Version: 5.0~a9
+Configuration-Version: 4.0.3
 Name: live-image
 Type: hdd
