@@ -19,6 +19,13 @@ $ sudo lb build
 http://live.debian.net/manual/stable/html/live-manual/toc.en.html
 
 
+## Vagrant
+
+To use vagrant to build the image in a virtual machine install:
+* Vagrant
+* Virtualbox
+* Ansible
+
 ## maintaning a package repository
 
 http://www.aptly.info/
