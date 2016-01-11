@@ -4,7 +4,11 @@
 
 install live-build from source (not the outdated debian package)
 
-http://live.debian.net/manual/current/html/live-manual/installation.en.html#127
+http://debian-live.alioth.debian.org/live-manual/html/live-manual.en.html#126
+
+ * sudo apt-get install build-essential debhelper
+ * git clone git://anonscm.debian.org/debian-live/live-build.git
+ * cd live-build
 
 ## build image
 
