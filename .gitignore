@@ -11,3 +11,5 @@ chroot.tmp/
 live-image-amd64.files
 live-image-amd64.packages
 live-image-amd64.contents
+live-default/live-image-amd64.hybrid.iso
+live-default/live-image-amd64.hybrid.iso.zsync

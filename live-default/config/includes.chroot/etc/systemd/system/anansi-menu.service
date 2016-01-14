@@ -6,3 +6,6 @@ ExecStart=/usr/share/python/python-anansi-menu/bin/anansi-menu.py
 StandardInput=tty
 StandardOutput=tty
 TTYPath=/dev/tty11
+
+[Install]
+WantedBy=multi-user.target
