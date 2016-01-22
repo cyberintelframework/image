@@ -1,13 +1,24 @@
 ---
 - hosts: all
+  remote_user: root
+  become: root
+  become_method: sudo
+  
   tasks:
-    - name: install live build
-      apt: name=live-build update_cache=yes
-      sudo: yes
+    - name: enable secure apt transport
+      apt: name=apt-transport-https update_cache=yes
+      sudo: true
 
-    - name: enable repository
-      apt_repository: repo='deb https://dl.bintray.com/anansi/anansi stable main' filename=anansi
+    - name: enable anansi repo
+      apt_repository: repo='deb https://dl.bintray.com/anansi/anansi stable main'
+      sudo: true
 
-    - name: install key
+    - name: install anansi key
       apt_key: keyserver=hkps.pool.sks-keyservers.net id=7B515ADA
+      sudo: true
+
+    - name: install live-build package
+      apt: name=live-build update_cache=yes
+      sudo: true
+
 
