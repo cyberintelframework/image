@@ -1,3 +1,0 @@
-[submodule "packaging/live-build"]
-	path = packaging/live-build
-	url = git://anonscm.debian.org/debian-live/live-build.git
