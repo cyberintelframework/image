@@ -6,6 +6,6 @@ RUN add-apt-repository 'deb https://dl.bintray.com/anansi/anansi stable main'
 RUN apt-key adv --keyserver hkps.pool.sks-keyservers.net --recv 7B515ADA
 RUN apt-get update && \
     apt-get -y install live-build
-RUN mkdir work
-WORKDIR /work
+RUN mkdir -p work/live-default
+WORKDIR /work/live-default
 CMD lb build
