@@ -30,13 +30,9 @@ To use vagrant to build the image in a virtual machine install:
 * Virtualbox
 * Ansible
 
-## maintaning a package repository
+## Package repository
 
-http://www.aptly.info/
-https://launchpad.net/ubuntu/+ppas
-https://wiki.debian.org/SettingUpSignedAptRepositoryWithReprepro
-https://bintray.com/
+Both the created image and the vagrant image have the anansi Debian
+package repository on bintray enabled:
 
-## Docker
-
-https://registry.hub.docker.com/repos/cyberintelframework/
+https://bintray.com/anansi/anansi
